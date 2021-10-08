@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E202B;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* start nav  */
+.brand .brand-img {
+  width: 60px;
+}
+
+.brand h6 {
+  margin: 0 !important;
+}
+
+.brand span {
+  font-size: 12px;
+  color: #BFC1AA;
+}
+
+nav ul a {
+  color: #fff;
+  transition: 100ms;
+  border-radius: 25px;
+  padding: 5px 15px;
+  border: 2px solid transparent;
+}
+
+nav li a.active-link {
+  border: 2px solid #009AD8;
+  color: #009AD8;
+}
+
+nav li a:hover {
+  border: 2px solid #009AD8;
+  color: #009AD8;
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 300ms;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.burger .line {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 3px;
+  transition: 300ms;
+}
+
+.burger:hover {
+  border: 2px solid #009AD8;
+
+}
+
+.burger:hover .line {
+  background-color: #009AD8;
+}
+
+nav ul {
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 130px;
+    width: 100% !important;
+    text-align: center;
+    display: none;
+  }
+
+  nav ul li {
+    background-color: #262936;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  nav ul li:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(128, 126, 126);
+    bottom: 0;
+    left: 0;
+  }
+
+  nav ul li:first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  nav ul li:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  nav li a.active-link {
+    border: 2px solid transparent;
+  }
+
+  nav li a:hover {
+    border: 2px solid transparent;
+  }
+
+}
+
+/* end nav  */
+.after-content {
+  transition: 800ms;
+  transform: translateY(0px);
+}
+
+/* start header   */
+
+header {
+  background-image: url(../imgs/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+input {
+  width: 80%;
+  margin: auto;
+  display: block;
+  background-color: #1E202B;
+  transform: translateY(50px);
+  border: none;
+  border-radius: 26px;
+  line-height: 48px;
+  color: rgb(230, 230, 230);
+  font-size: 16px;
+  padding-left: 15px;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+header button.rounded-pill {
+  position: absolute;
+  top: 55px;
+  right: 11%;
+  width: 100px;
+}
+
+/* end header   */
+
+/* start cards  */
+
+.weather-data .row {
+  border-radius: 20px;
+  overflow: hidden;
+  transform: translateY(-100px);
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  background-color: #323544;
+  border-radius: 0 !important;
+  height: 400px;
+}
+
+.card .card-header,
+.card .card-title {
+  color: #BFC1C8;
+}
+
+.card h1 {
+  font-size: 90px;
+}
+
+.card .card-body span {
+  color: #8E8F94;
+}
+
+.col-lg-4 {
+  padding: 0 !important;
+}
+
+.card.bg-diff {
+  background-color: #262936;
+}
+
+/* end cards  */
+
+/* start footer  */
+footer {
+  background-color: #262936;
+  padding: 50px 0;
+}
+
+footer input {
+  transform: translateY(0px);
+  margin: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #BFC1C8;
+}
+
+footer ul li a {
+  background-color: #1E202B;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+footer ul li a i {
+  color: #009AD8;
+
+}
+
+footer .subscribe {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+
+/* end footer  */
